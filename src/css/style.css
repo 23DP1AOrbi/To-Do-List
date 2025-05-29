@@ -17,7 +17,6 @@ main {
 
 .input-container > h1 {
     color: aliceblue;
-    opacity: 0.9;
 }
 
 .input-container {
@@ -238,4 +237,82 @@ main {
 
 #save-task:hover {
     opacity: 0.85;
+}
+
+#entry-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(187, 230, 231);
+}
+
+.register, .login {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 20px;
+    padding-bottom: 30px;
+    background-color: rgb(101, 158, 160);
+    border-radius: 5px;
+    font-family: Cambria, serif;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.register > label, .login > label {
+    text-align: left;
+    font-family: Cambria, serif;
+    font-size: 20px;
+}
+
+.register > input, .login > input {
+    margin-bottom: 15px;
+    font-family: Cambria, serif;
+    outline: none;
+    padding: 5px 5px;
+}
+
+.buttons-reg > button {
+    padding: 5px 10px;
+    font-family: Cambria, serif;
+    font-size: 14px;
+}
+
+#signup-btn:hover, #login-btn:hover,  #switch-to-login:hover, #switch-to-register:hover {
+    background-color: rgb(41, 221, 221);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#switch-to-login, #switch-to-register {
+    background-color: rgb(101, 202, 202);;
+    border-radius: 5px;
+}
+
+#signup-btn, #login-btn {
+    background-color: rgb(187, 230, 231);
+    border-radius: 5px;
+}
+
+#logout-btn {
+    align-self: flex-end;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#logout-btn:hover {
+    background-color: rgb(206, 204, 204);
+    cursor: pointer;
 }

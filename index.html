@@ -7,27 +7,43 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
+    <div class="user-entry" id="entry-bg">
+        <div class="register">
+        <h1>Register</h1>
+        <label>Username</label>
+        <input type="text" id="signup-username">
+
+        <label>Password</label>
+        <input type="password" id="signup-password">
+
+        <div class="buttons-reg">
+            <button id="signup-btn">Sign up</button>
+            <button id="switch-to-login">Log in</button>
+        </div>
+        </div>
+        <div class="login hidden">
+            <h1>Login</h1>
+            <label>Username</label>
+            <input type="text" id="login-username">
+
+            <label>Password</label>
+            <input type="password" id="login-password">
+
+            <div class="buttons-reg">
+                <button id="switch-to-register">Sign up</button>
+                <button id="login-btn">Log in</button>
+            </div>
+            </div>
+    </div>
     <main>
         <form class="input-container">
-            <h1>To-Do List</h1>
+            <button id="logout-btn">Logout</button>
+            <h1 id="username">To-Do List</h1>
             <input id="input-task" type="text" placeholder="Enter Task">
             <textarea id="input-description" placeholder="Enter description"></textarea>
             <button id="add-task" type="submit">+</button>
         </form>
-        <div class="task-container">
-            <!-- <div class="task">
-                <input type="checkbox" class="task-completed">
-                <div class="task-info">
-                    
-                    <p class="task-title">Buy Groceries</p>
-                    <p class="task-description">Eggs, cheese, milk, bacon, house, lettuce, salad</p>
-                </div>
-                <form class="task-btn">
-                    <button class="task-edit">Edit</button>
-                    <button class="task-delete">Delete</button>
-                </form>
-            </div> -->
-        </div>
+        <div class="task-container"></div>
     </main>
     <div class="modal-background">
         <div class="modal">
